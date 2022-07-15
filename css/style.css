@@ -1,0 +1,296 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation bar */
+
+
+/* navigation bar: Logo and Images */
+
+#logo {
+    margin: 12px 15px;
+}
+
+#logo img {
+    /* margin: 50px 45px; */
+    width: 80px;
+    padding-left: 4px;
+    height: 50px;
+}
+
+
+/* Navigation Bar: list styling */
+
+#navbar {
+    display: flex;
+    /* position: sticky; */
+    align-items: center;
+    position: relative;
+    height: 56px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 3.5;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 20px;
+    color: rgb(247, 245, 242);
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Pattaya', sans-serif;
+    /* margin-left: 80px; */
+}
+
+#navbar ul li a:hover {
+    color: rgb(17, 16, 16);
+    background-color: blanchedalmond;
+}
+
+
+/* Client Section */
+
+#order-section {
+    height: 350px;
+    background-color: cadetblue;
+}
+
+#order-section::before {
+    content: "";
+    position: absolute;
+    background: url('../image/pancakes-2291908_1920.jpg');
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.8;
+    margin-top: 113px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 153px;
+    margin-top: 86px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+#order-section h1 {
+    font-family: 'Pattaya', sans-serif;
+    color: brown;
+    font-size: 50px;
+    border-bottom: 2px solid brown;
+    border-top: 2px solid brown;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 567px;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../image/bg2.jpg') no-repeat center center /cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    margin-top: 400px;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#home p {
+    color: blanchedalmond;
+    font-size: 1.2rem;
+    font-family: 'Pattaya', sans-serif;
+}
+
+
+/* Services Section */
+
+h2.h-primary.center {
+    font-size: 50px;
+    margin-bottom: -30px;
+    border-bottom: 2px solid brown;
+    border-top: 2px solid brown;
+    color: brown;
+}
+
+#services .box p {
+    font-family: 'Pattaya', sans-serif;
+    /* color: brown; */
+}
+
+sectio #home {
+    margin-top: 450px;
+}
+
+section h2 {
+    margin-top: 96px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#services {
+    margin: 35px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: rgb(233, 213, 217);
+}
+
+#services .box img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Contact Sectio */
+
+#contact {
+    position: relative;
+    margin-top: 120px;
+}
+
+section #contact-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: url('../image/contact-us-2993000_1920.jpg') no-repeat center center /cover;
+    z-index: -1;
+    opacity: 0.5;
+    margin-top: 35px;
+}
+
+#contact-box textarea {
+    width: 636%;
+    border-radius: 6px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box form {
+    width: 90px;
+    margin-right: 436px;
+    margin-top: 38px;
+}
+
+#contact-box label {
+    font-size: 20px;
+    width: 80px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#contact-box input {
+    width: 636%;
+    padding: 4px;
+    font-family: 'Pattaya', sans-serif;
+    border-radius: 6px;
+}
+
+#contact h1 {
+    color: brown;
+    font-size: 50px;
+    font-family: 'Pattaya', sans-serif;
+    border-bottom: 2px solid brown;
+    border-top: 2px solid brown;
+}
+
+footer {
+    background-color: blanchedalmond;
+    color: brown;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+
+/* Ulitility Classes */
+
+.h-primary {
+    font-size: 3.8 rem;
+    padding: 13px;
+}
+
+.h-secondary {
+    font-size: 2.8 rem;
+    padding: 12px;
+    margin-top: 3px;
+}
+
+.btn {
+    background-color: rgb(172, 36, 36);
+    border: 2px solid blanchedalmond;
+    padding: 4px 20px;
+    border-radius: 20px;
+    color: blanchedalmond;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.btn :hover {
+    background-color: blanchedalmond;
+    color: brown;
+    border: 2px solid brown;
+}
+
+.center {
+    text-align: center;
+}
